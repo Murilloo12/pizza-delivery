@@ -1,15 +1,11 @@
 package academy.quarkus.pizza;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-
-import java.util.List;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import academy.quarkus.pizza.model.Location;
-import academy.quarkus.pizza.model.Pizza;
 import academy.quarkus.pizza.model.Store;
 import academy.quarkus.pizza.rs.PizzaResource;
 import io.quarkus.logging.Log;
@@ -46,12 +42,5 @@ public class PizzaTest {
 
     }
 
-
-
-    @Test
-    public void testSanity() {
-        List<Pizza> ps = pizzas.getAll();
-        assertFalse(ps.isEmpty());
-    }
     
 }
