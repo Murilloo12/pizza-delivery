@@ -1,4 +1,4 @@
-package academy.quarkus.pizza;
+package academy.quarkus.pizza.rs;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -21,7 +21,7 @@ import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 
 @QuarkusTest
-public class PizzaTest {
+public class PizzaResourceTest {
 
     @Inject
     PizzaResource pizzas;
